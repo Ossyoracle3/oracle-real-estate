@@ -1,0 +1,805 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* start of nav */
+
+nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: rgb(231, 17, 17); */
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+
+nav .triangle{
+    width: 0;
+	height: 0;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 23px solid #02970e;
+    word-spacing: 10px;
+}
+
+nav .triangle span{
+    font-size: 24px;
+    color: rgb(20, 12, 64);
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+nav .list{
+    display: flex;
+    display: none;
+}
+
+nav .list ul{
+    display: flex;
+    align-items: center;
+}
+
+nav .list ul li{
+    padding-left: 60px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+nav .list ul li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav .list ul li a:hover{
+  padding-bottom: 25px;
+  border-bottom: 2px solid rgb(14, 181, 95);
+  color: rgb(14, 181, 95);
+}
+
+nav .list button{
+    padding: 20px 50px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(14, 181, 95);
+    outline: none;
+    border: none;
+}
+
+nav .list button:hover{
+    cursor: pointer;
+}
+
+
+.menu {
+    height: 30px;
+    width: 100%;
+    background-color: grey;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    /* position: relative; */
+    /* padding: 5px; */
+    }
+    
+.menu .dropdown .ham{
+        background-color: black;
+        color: white;
+        display: flex;
+        padding:4px ;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        border-radius: 3px;
+        /* outline: none; */
+        border: none;
+        cursor: pointer;
+        height: 27px;
+        /* position: absolute; */
+        /* top: 50px; */
+    }
+    
+    
+    
+.menu .dropdown a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 4px;
+        font-size: 8px;
+    }
+    
+.menu .dropdown{
+     display: block;   
+     /* overflow: hidden; */
+     background-color: #333;
+     position: relative;
+    }
+    
+.menu .dropdown .ham{
+        background: rgb(19, 18, 18);
+       /* display: block; */
+       background: black;
+       display:block;
+       position: absolute;
+       right: 0;
+       bottom: -15px;
+       font-size: 15px;
+       /* top: 0px; */
+       /* padding: 30px 20px; */
+       
+    
+    }
+    
+.menu .dropdown .ham .content{
+        display:none;
+        margin-top: 5px;
+    }
+    
+.menu .dropdown .ham .content a{
+        color: white;
+        padding: 12px 26px;
+        text-decoration: none;
+        font-size: 8px;
+        display: block;   
+        background-color: #5b5b5c;
+        /* overflow: hidden;
+        background-color: #333; */
+        
+    }
+    
+
+/* end of nav */
+
+/* start of header */
+
+header{
+    background-image: url(img/pexels-vecislavas-popa-1571460.jpg);
+    /* background-image: url(img/pexels-expect-best-323780.jpg); */
+    min-height: 100vh;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+header .dream{
+background-color: rgb(20, 12, 64);
+color: white;
+width: 350px;
+height: 255px;
+padding: 20px;
+margin-top: 60px;
+text-align: left;
+}
+
+header .dream h2{
+    font-size: 30px;
+    padding: 10px;
+}
+
+header .dream p{
+    font-size: 12px;
+    padding: 10px;
+}
+
+header .dream .properties{
+    margin-top: 60px;
+    margin-left: 20px;
+    /* background-color: brown; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+header .dream .form .buy {
+  padding: 10px;
+  font-size: 10px;
+  width: 120px;
+  height: 50px;
+  background-color:white;
+  color: rgb(14, 181, 95);
+  outline: none;
+  border: none;
+  /* padding-bottom: 20px; */
+}
+
+header .dream .form .buy2 {
+  padding: 10px;
+  font-size: 10px;
+  width: 120px;
+  height: 50px;
+  background-color:rgb(20, 12, 64);
+  color: white;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+header .dream .properties .form form{
+    height: 200px;
+    width: 350px;
+    background-color:white;
+    /* margin-right: 50px; */
+    padding-top: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    /* display: none; */
+}
+
+header .dream .properties .form form .input{
+    background-color:transparent;
+    padding: 10px;
+    color: grey;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    
+}
+
+header .dream .properties .form form .input #font{
+    /* background-color: rgb(65, 47, 47); */
+    outline: none;
+    border: none;
+    /* padding-left: 10px; */
+}
+
+header .dream .properties .form form .input #location{
+    width: 210px;
+    outline: none;
+    border: none;
+}
+
+header .dream .properties .form form .property{
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    color: grey;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid grey;
+}
+
+
+header .dream .buy .form form #property:hover{
+    background-color: aqua;
+}
+
+header .dream .properties .form form .bedroom{
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    color: grey;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid grey;
+}
+
+/* end of header */
+
+/* start of main property */
+main{
+    width: 100%;
+    min-height: 325vh;
+    margin-bottom: 10px;
+}
+
+main h1{
+font-size: 18px;
+padding: 20px;
+text-align: left;
+}
+
+main .places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* background-color: blue; */
+    min-height: 300vh;
+    width: 100%;
+}
+
+main .places .card{
+    min-height: 350px;
+    /* background-color: aqua; */
+    border: 0.5px solid rgba(143, 134, 134, 0.404);
+    overflow: hidden;
+}
+
+main .places .card .img{
+    width: 330px;
+    height: 240px;
+    background-image: url(img/pexels-pixabay-164558.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* transition: transform .2s; */
+    transform: scale(1);
+    transition: transform .5s ease-in-out ;
+    /* transition-duration: 1s;
+    margin: 0 auto; */
+
+    
+}
+
+main .places .card:hover  .img{
+    /* transform: scaleX(2); */
+    /* transform: scale(1.1); */
+    transform:scale(1.05);
+    border: none;
+}
+
+main .places .card .info{
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+}
+
+main .places .card .info a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+main .places .card .info a:hover{
+    color:rgb(14, 181, 95);
+    text-decoration: underline;
+}
+
+main .places .card .info .location{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main .places .card .info .location #font{
+    color:rgb(14, 181, 95);
+    font-size: 14px;
+}
+
+main .places .card .info .location span{
+    margin-left: 10px;
+    color: grey;
+}
+
+main .places .card .info .bed{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .places .card .info .bed span{
+    color:rgb(14, 181, 95);
+    font-weight: 700;
+}
+
+
+/*end of main property */
+
+/* start of browse property */
+.browse{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.browse .card{
+padding: 30px 20px;
+background-color:rgb(14, 181, 95);
+}
+
+.browse .card h1{
+font-size: 18px;
+font-weight: 900;
+}
+
+.browse .card p{
+font-size: 10px;
+padding: 20px 0px;
+}
+
+.browse .card button{
+    background-color: rgb(3, 3, 75);
+    color: white;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+
+.browse .img{
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(img/pexels-vecislavas-popa-1571459.jpg);
+}
+
+
+/* end of browse property */
+
+/* start of category */
+.category{
+    min-height: 185vh;
+    width: 100%;
+}
+
+.category .card{
+    width: 380px;
+    min-height: 350px;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+
+.category .card .img img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+transform:scale(1);
+transition: transform 1s ease-in-out;
+} 
+
+.category .card .img img:hover{
+transform: scale(0.95);
+}
+
+.category .card .img .span{
+text-align: center;
+background-color:rgb(14, 181, 95);
+padding: 10px;
+width: 40px;
+height: 40px;
+font-size: 17px;
+align-items: center;
+border-radius: 50%;
+position: relative;
+left: 172px;
+bottom: 23px;
+}
+
+.category .card h2{
+    padding-top: 30px;
+    font-weight: 900;
+}
+
+.category .card p{
+    padding-top: 10px;
+}
+
+
+
+/* end of category */
+
+/* start of agents */
+.agent{
+    width: 100%;
+    height: 70vh;
+    /* background-color: yellow; */
+}
+
+.agent h1{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.agent .profiles{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
+}
+
+ 
+
+.agent .profiles .card{
+    position: relative;
+  width: 50%;
+  height: 190px;
+  max-width: 300px;  
+  text-align: center;
+  margin: 10px;
+}
+
+.agent .profiles .card .img{
+    display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.agent .profiles .card .overlay{
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    background-color:rgb(3, 3, 75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;  
+    color: white;
+}
+
+.agent .profiles .card .overlay #icon{
+    color: white;
+    font-size: 10px;
+}
+ 
+.agent .profiles .card:hover .overlay{
+    height: 10%;
+    color: white;
+}
+
+.agent .profiles .card a{
+   text-align: center;
+   align-items: center;
+   color: rgb(20, 12, 64); 
+   text-decoration: none;
+   font-weight: 900;
+}
+
+
+.agent .profiles .card a:hover{
+    color: green;
+}
+
+.agent .profiles .card p{
+padding: 10px;
+}
+
+.agent .profiles .card p .dual{
+padding: 10px;
+color: grey;
+font-weight: 200;
+}
+
+
+/* end of agents */
+
+/* start of footer */
+footer{
+width: 100%;
+min-height: 196vh;
+background-color: rgb(20, 12, 64);
+}
+
+footer .gallery{
+    height: 60vh;
+    width: 100%;
+
+}
+
+footer .gallery .img{
+    height: 50vh;
+    width: inherit;
+/* background-image: url(img/pexels-nick-kwan-2614818.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain; */
+}
+
+footer .gallery .img img{
+    height: 50vh;
+    width: inherit;
+}
+
+
+
+footer .gallery .img button{
+position: relative;
+left: 140px;
+bottom: 100px;
+background-color: rgb(20, 12, 64);
+border-radius: 20px;
+padding: 10px;
+color: white;
+outline: none;
+border: none;
+width: 100px;
+height: 40px;
+font-size: 10px;
+transform: translateY(0);
+transition: transform .5s ease-in-out;
+
+}
+
+footer .gallery .img img:hover {
+filter: grayscale(30%);
+
+
+}
+
+footer .gallery .img:hover  button {
+    transform: translateY(-60%);
+    background-color: rgb(14, 181, 95);
+}
+
+footer .bottom{
+display: flex;
+align-items: center;
+justify-content: left;
+flex-wrap: wrap;
+}
+
+footer .bottom .logo{
+    padding: 20px;
+    width: 300px;
+   
+}
+
+footer .bottom .logo .triangle{
+    width: 0;
+	height: 0;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 23px solid #02970e;
+    word-spacing: 10px;
+}
+
+footer .bottom .logo .triangle span{
+    font-size: 24px;
+    color: white;
+    padding-left: 16px;
+    padding-top: 15px;
+}
+
+footer .bottom .logo p{
+    color: rgb(195, 198, 219);
+    padding: 10px 0px;
+    line-height: 16px;
+    text-align: left;
+}
+
+footer .bottom .logo .font{
+    margin-top: 15px;
+
+}
+
+footer .bottom .logo .font #icon{
+    color:rgb(14, 181, 95) ;
+    border-radius: 50%;
+    border: 1px solid rgb(14, 181, 95);
+    padding: 12px;
+    margin-right: 15px;
+}
+
+footer .bottom .logo .font #icon:hover{
+    color: white;
+    background-color: rgb(14, 181, 95);
+}
+
+footer .bottom .about{
+    padding: 20px;
+    width: 200px;
+    /* background-color: yellow; */
+}
+
+footer .bottom .about h2{
+    padding-bottom: 20px;
+    color: white;
+}
+
+footer .bottom .about ul{
+list-style: none;
+}
+
+footer .bottom .about ul li{
+padding-top: 10px;
+}
+
+footer .bottom .about ul li a{
+    text-decoration: none;
+    color: rgb(195, 198, 219);
+}
+
+footer .bottom .about ul li a:hover{
+color:rgb(14, 181, 95) ;
+padding-left: 9px;
+transition: 1s;
+}
+
+
+footer .bottom .services{
+    padding: 20px;
+    width: 200px;
+    /* background-color: yellow; */
+}
+
+footer .bottom .services h2{
+    padding-bottom: 20px;
+    color: white;
+}
+
+footer .bottom .services ul{
+list-style: none;
+}
+
+footer .bottom .services ul li{
+padding-top: 10px;
+}
+
+footer .bottom .services ul li a{
+    text-decoration: none;
+    color: rgb(195, 198, 219);
+}
+
+footer .bottom .services ul li a:hover{
+color:rgb(14, 181, 95) ;
+padding-left: 9px;
+transition: 1s;
+}
+
+footer .bottom .newsletter{
+    width:355px;
+    padding: 20px;
+}
+
+footer .bottom .newsletter h2{
+    padding-bottom: 20px;
+    color: white;
+    /* text-align: left; */
+}
+
+footer .bottom .newsletter p{
+    padding-bottom: 20px;
+    color:rgb(195, 198, 219) ;
+    text-align: left;
+}
+
+footer .bottom .newsletter #input{
+    background-color: transparent;
+    width: 355px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+footer .bottom .newsletter button{
+    width: 355px;
+    height: 30px;
+    margin-top:10px ;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    background-color: rgb(14, 181, 95) ;
+    border: none;
+    cursor: pointer;
+}
+
+footer p{
+text-align: center;
+padding-left:10px  ;
+margin-top: 20px;
+}
+
+footer p #icon{
+color: green;
+}
+
+footer p span{
+color: white;
+}
+
+
+
+/* end of footer */
+
+/* start of media query */
+@media only screen and (min-width: 768px)  {
+    
+
+}
